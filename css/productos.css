@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  background: #D7BDE2;
+}
+/*Parallax css*/
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* The image used */
+  background: url("../archivos/fondopage.jpg");
+
+  /* Set a specific height */
+  min-height: 640px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.block h3{
+color: black;
+letter-spacing: 5px;
+font-size: 10vw;
+font-family: 'Lobster';
+}
+:root {
+  --main-pt-color: #DF68AE;
+}
+
+.titulo-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--main-pt-color);
+}
+
+.titulo-p h2{
+  color: #000000;
+  font-style: italic;
+}
+/*^^^^^^^^^^^^^^*/
+/*Parallax css*/
+.container-article {
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*Contenedor del articulo*/
+.container-article .box-article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  background: var(--main-pt-color);
+  margin: 20px;
+  border-radius: 15px;
+}
+
+/*Titulo del articulo*/
+.container-article .box-article h2{
+  font-size: 18px;
+  font-family: 'Lobster', cursive;
+}
+
+/*Imagen del articulo*/
+.container-article .box-article img{
+  width: 150px;
+  height: 150px;
+}
+
+.orden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 3px;
+  padding: 2px;
+  margin-top: 30px;
+}
+
+.personal-data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 3px;
+  padding: 2px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.order-container{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/*Botón de compra del articulo*/
+.container-article .box-article button{
+  outline: none;
+}
+
+.form-row{
+  margin-bottom: 5px;
+}
+
+.form-row div{
+  margin-bottom: 5px;
+}
+
+.location{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-pt-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.location-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.location-info h2{
+  color: #e8e8e8;
+  font-style: italic;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+  border-radius: 8px;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+@media (max-width: 820px) {
+  .container-article .box-article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 365px;
+  }
+  .location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .location-info h2{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-article .box-article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 365px;
+  }
+  .location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .location-info h2{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-article .box-article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    height: 365px;
+  }
+  .location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .location-info h2{
+    font-size: 40px;
+  }
+}
+
+/*Estilos para el footer*/
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  background: #000000;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+
+.box-footer .logo img {
+  width: 80px;
+  height: 8 0px;
+}
+.box-footer .logo {
+  display: flex;
+  justify-content: center;
+}
+
+:root {
+  --main-bg-color: #E5EDF1;
+}
+
+.box-footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: var(--main-bg-color);/*#0f0e0e*/
+  font-size: 18px;
+}
+
+.box-footer h2 {
+  margin-bottom: 30px;
+  color: var(--main-bg-color);
+  font-weight: 700;
+}
+
+.box-footer a {
+  margin-top: 10px;
+  color: var(--main-bg-color);
+  font-weight: 600;
+}
+
+.box-footer a:hover {
+  color: #f90618;
+  font-weight: 600;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.box-footer a .fab {
+  font-size: 20px;
+}
+
+.box-copy {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box-copy p {
+  margin-top: 20px;
+  color: var(--main-bg-color);
+  font-weight: bold;
+}
+
+.box-copy hr {
+  border: none;
+  height: 1px;
+  background-color: var(--main-bg-color);
+}
+
+.panel{
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 0px;
+  color: black;
+  z-index: 1;
+  background: #e8e8e8 ;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.panel::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  background-color: #39bda7;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+}
+
+.panel:hover{
+  color: #e8e8e8;
+}
+
+.panel:hover::before{
+  width: 100%;
+}
